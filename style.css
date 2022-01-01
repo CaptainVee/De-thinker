@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a{
+  color: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+/* Navigation */
+
+.nav-container {
+    height: 72px;
+    top: 0px;
+    z-index: 500;
+    position: relative;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+/* Header */
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.featurette-divider{
+  margin-top: 5rem;
+}
+
+
+.contains{
+  background: url(images/hero.svg);
+  max-width: 100%;
+      margin-top: 3rem;
+    height: 39rem;
+}
+
+.navbar-brand{
+margin-right: 13rem;
+}
+
+.btn{
+  background-color: #8D5CF6;
+  border-color: #8D5CF6;
+
+}
+.social-icon{
+  font-size: 3rem;
+  margin-left: 7rem;
+}
+.counter{
+font-style: normal;
+font-weight: bold;
+font-size: 58px;
+line-height: 80px;
+text-align: center;
+letter-spacing: 0.2px;
+color: #8D5CF6;
+
+}
+
+
+
+
+
+
+/* Sliding Animation*/
+
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+
+/*When the screen is big*/
+@media (min-width: 992px){
+.navbar-custom {
+  margin-left: 7rem;
+}
+}
+
+
+
